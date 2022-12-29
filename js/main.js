@@ -24,7 +24,7 @@ window.addEventListener('load', function () {
     setTimeout(function () {
         iziToast.show({
             title: hello,
-            message: '欢迎来到 Snavigation'
+            message: '欢迎来到 Eternity_fox起始页'
         });
     }, 800);
 
@@ -86,7 +86,7 @@ function time() {
 //获取天气
 //每日限量 100 次
 //请前往 https://www.tianqiapi.com/index/doc?version=v6 申请（免费）
-fetch('https://yiketianqi.com/api?unescape=1&version=v6&appid=43986679&appsecret=TksqGZT7')
+fetch('https://yiketianqi.com/api?unescape=1&version=v6&appid=85271425&appsecret=aScHk9dE')
     .then(response => response.json())
     .then(data => {
         //$('#wea_text').html(data.wea + '&nbsp;' + data.tem_night + '℃' + '&nbsp;~&nbsp;' + data.tem_day + '℃')
@@ -153,18 +153,17 @@ color: rgb(30,152,255);
 `
 var title1 = 'Snavigation'
 var title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ / 
-  | | | |\\/| |\\___ \\  \\   /    \\   /  
- _| |_| |  | |____) |  | |      | |   
-|_____|_|  |_|_____/   |_|      |_|                                                     
+ _____   _____   _____   _____    __   _   _   _____  __    __       _____   _____  __    __ 
+| ____| |_   _| | ____| |  _  \  |  \ | | | | |_   _| \ \  / /      |  ___| /  _  \ \ \  / / 
+| |__     | |   | |__   | |_| |  |   \| | | |   | |    \ \/ /       | |__   | | | |  \ \/ /  
+|  __|    | |   |  __|  |  _  /  | |\   | | |   | |     \  /        |  __|  | | | |   }  {   
+| |___    | |   | |___  | | \ \  | | \  | | |   | |     / /         | |     | |_| |  / /\ \  
+|_____|   |_|   |_____| |_|  \_\ |_|  \_| |_|   |_|    /_/          |_|     \_____/ /_/  \_\                                                      
 `
 var content = `
 版 本 号：1.1
 更新日期：2022-07-12
 
-Github:  https://github.com/imsyy/Snavigation
 `
 console.log(`%c${title1} %c${title2}
 %c${content}`, styleTitle1, styleTitle2, styleContent)
